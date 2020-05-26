@@ -21,6 +21,7 @@ public class UserListBoard extends JPanel implements Serializable {
     private IWhiteBoard server;
     private JTextArea noticeBoard = new JTextArea();
     private JScrollPane noticeScrollPane = new JScrollPane(noticeBoard);
+    JButton kickButton;
     private JList list;
 
     public UserListBoard(String username){
@@ -37,7 +38,7 @@ public class UserListBoard extends JPanel implements Serializable {
 
         noticeBoard.setEditable(false);
 
-        JButton kickButton = new JButton("Kick Out");
+        kickButton = new JButton("Kick Out");
         kickButton.setBounds(128,375,100,25);
         kickButton.addActionListener(new ActionListener() {
             @Override
@@ -68,5 +69,6 @@ public class UserListBoard extends JPanel implements Serializable {
 
     public JTextArea getNoticeBoard() { return noticeBoard;}
 
+    public JButton getKickButton() { return kickButton;}
 }
 

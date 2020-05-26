@@ -265,5 +265,4 @@ public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
         });
     }
 
-
 }
