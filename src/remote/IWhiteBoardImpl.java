@@ -33,7 +33,6 @@ public class IWhiteBoardImpl extends UnicastRemoteObject implements IWhiteBoard,
     @Override
     public boolean check() throws RemoteException {
         if(users.size() == 0) {
-            System.out.println("#######");
             return false;
         }
         else {
@@ -146,20 +145,29 @@ public class IWhiteBoardImpl extends UnicastRemoteObject implements IWhiteBoard,
 
     }
 
+//    @Override
+//    public void isSameName(String[] details) throws RemoteException {
+//        try {
+//            IClient nextClient = (IClient)Naming.lookup("rmi://" + details[1] + "/" + details[2]);
+//            for(user c : users){
+//                if(c.getName().equals(details[0])) {
+//                    nextClient.reject("the username has been taken\n");
+//                }
+//            }
+//        } catch (MalformedURLException | NotBoundException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+//
+//    }
     @Override
-    public void isSameName(String[] details) throws RemoteException {
-        try {
-            IClient nextClient = (IClient)Naming.lookup("rmi://" + details[1] + "/" + details[2]);
-            for(user c : users){
-                if(c.getName().equals(details[0])) {
-                    nextClient.reject("the username has been taken");
-                }
+    public boolean isSameName(String[] detail) throws RemoteException{
+        for (user c : users){
+            if (c.getName().equals(detail[0])){
+                return true;
             }
-        } catch (MalformedURLException | NotBoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
-
+        return false;
     }
 
     @Override

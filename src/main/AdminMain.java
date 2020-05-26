@@ -62,6 +62,7 @@ public class AdminMain extends UnicastRemoteObject implements IClient,Serializab
             Naming.rebind("rmi://" + hostName + "/" + clientServiceName, this);
 
             IWhiteBoard server = (IWhiteBoard) Naming.lookup("rmi://" + hostName + "/" + serviceName);
+
             server.isEmpty(details);
             server.registerListener(details);
 
@@ -117,7 +118,7 @@ public class AdminMain extends UnicastRemoteObject implements IClient,Serializab
     @Override
     public void reject(String str) throws RemoteException {
         JOptionPane.showMessageDialog(null, str + "the request has been rejected", "error", JOptionPane.ERROR_MESSAGE);
-//        System.exit(0);
+        System.exit(0);
     }
 
     @Override

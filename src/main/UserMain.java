@@ -54,7 +54,7 @@ public class UserMain extends UnicastRemoteObject implements IClient, Serializab
             String serviceName = "Server";
             String[] details = {username,hostName,clientServiceName};
 
-//            Naming.rebind("rmi://" + hostName + "/" + clientServiceName, this);
+            Naming.rebind("rmi://" + hostName + "/" + clientServiceName, this);
             System.out.println(this);
 
             ServerSocket s = new ServerSocket(0);
@@ -65,24 +65,24 @@ public class UserMain extends UnicastRemoteObject implements IClient, Serializab
             Registry registry = LocateRegistry.createRegistry(localPort);
             registry.bind("whiteboard",iwb);
             System.out.println("the port: "+ localPort + " \nserver ready");
-            IWhiteBoard server;
-            try {
-                server = (IWhiteBoard) Naming.lookup("rmi://" + hostName + "/" + serviceName);
-                server.isSameName(details);
-                server.registerListener(details);
-                UWB.setServer(server);
 
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "No server, connection failed", "error", JOptionPane.ERROR_MESSAGE);
-                System.exit(0);
-            }
+            IWhiteBoard server = (IWhiteBoard) Naming.lookup("rmi://" + hostName + "/" + serviceName);
 
 //            if(!server.check()) {
-//
+//                JOptionPane.showMessageDialog(null, "empty room, connection failed", "error", JOptionPane.ERROR_MESSAGE);
+//                System.exit(0);
 //            }
 
+//            server.isSameName(details);
+            if (server.isSameName(details)){
+                JOptionPane.showMessageDialog(null, "This username has been used!", "error", JOptionPane.ERROR_MESSAGE);
+                System.exit(0);
+            }
+            server.registerListener(details);
 
-        } catch (RemoteException e1) {
+            UWB.setServer(server);
+
+        } catch (RemoteException | NotBoundException e1) {
             // TODO Auto-generated catch block
             JOptionPane.showMessageDialog(null, "connection failed", "error", JOptionPane.ERROR_MESSAGE);
             e1.printStackTrace();
