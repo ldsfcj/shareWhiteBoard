@@ -3,6 +3,7 @@ package main;
 import remote.IClient;
 import remote.IWhiteBoard;
 import remote.IWhiteBoardImpl;
+import sun.security.x509.IPAddressName;
 import ui.AdminStartFrame;
 import ui.AdminWhiteBoard;
 
@@ -12,7 +13,9 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.Serializable;
+import java.net.InetAddress;
 import java.net.MalformedURLException;
+import java.net.UnknownHostException;
 import java.rmi.AlreadyBoundException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
@@ -62,8 +65,6 @@ public class AdminMain extends UnicastRemoteObject implements IClient,Serializab
             Naming.rebind("rmi://" + hostName + "/" + clientServiceName, this);
 
             IWhiteBoard server = (IWhiteBoard) Naming.lookup("rmi://" + hostName + "/" + serviceName);
-
-            server.isEmpty(details);
             server.registerListener(details);
 
             AWB.setServer(server);

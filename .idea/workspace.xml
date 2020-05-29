@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="shareWhiteBoard:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ea703a9e-b0a2-4843-8354-c8a66430385d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shareWhiteBoard_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/META-INF/shareWhiteBoard.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/main/AdminMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/main/AdminMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/main/UserMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/main/UserMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/remote/IWhiteBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/remote/IWhiteBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/remote/IWhiteBoardImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/remote/IWhiteBoardImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/shareWhiteBoard/ui/AdminWhiteBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AdminMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AdminMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UserMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remote/IWhiteBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/remote/IWhiteBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remote/IWhiteBoardImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/remote/IWhiteBoardImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remote/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/remote/user.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/AdminWhiteBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AdminWhiteBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/PaintBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PaintBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,26 +54,30 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sharewhiteboard" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\The University of Melbourne\1st Semester 2020\Distributed Systems_COMP90015\Assignment2\shareWhiteBoard\src\icon" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\The University of Melbourne\1st Semester 2020\Distributed Systems_COMP90015\Assignment2\shareWhiteBoard\src\shape" />
       <recent name="D:\The University of Melbourne\1st Semester 2020\Distributed Systems_COMP90015\Assignment2\shareWhiteBoard\src\icon" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\The University of Melbourne\1st Semester 2020\Distributed Systems_COMP90015\Assignment2\shareWhiteBoard\src\icon" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui" />
     </key>
   </component>
   <component name="RunManager" selected="Application.UserMain">
@@ -56,7 +85,6 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main.AdminMain" />
-      <module name="shareWhiteBoard" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -71,7 +99,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ui.AdminWhiteBoard" />
-      <module name="shareWhiteBoard" />
+      <module name="shareWhiteBoard_Admin" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ui.*" />
@@ -86,7 +114,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main.UserMain" />
-      <module name="shareWhiteBoard" />
+      <module name="shareWhiteBoard_Admin" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -101,7 +129,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ui.UserStartFrame" />
-      <module name="shareWhiteBoard" />
+      <module name="shareWhiteBoard_Admin" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ui.*" />
@@ -116,7 +144,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ui.UserWhiteBoard" />
-      <module name="shareWhiteBoard" />
+      <module name="shareWhiteBoard_Admin" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ui.*" />
@@ -135,6 +163,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="shareWhiteBoard_Admin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="shareWhiteBoard_Admin" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AdminMain" />
+      <item itemvalue="Application.AdminWhiteBoard" />
+      <item itemvalue="Application.UserMain" />
+      <item itemvalue="Application.UserStartFrame" />
+      <item itemvalue="Application.UserWhiteBoard" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserMain" />
@@ -177,7 +259,9 @@
       <workItem from="1589944652292" duration="100870000" />
       <workItem from="1590330043374" duration="2601000" />
       <workItem from="1590415535176" duration="5523000" />
-      <workItem from="1590463659645" duration="14262000" />
+      <workItem from="1590463659645" duration="19953000" />
+      <workItem from="1590583374219" duration="3863000" />
+      <workItem from="1590726116303" duration="15284000" />
     </task>
     <servers />
   </component>
@@ -185,22 +269,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="324" y="134" key="#Project_Structure" timestamp="1588994176782">
+    <state x="598" y="109" key="#AdminMain" timestamp="1590758400265">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="324" y="134" key="#Project_Structure/0.0.1463.884@0.0.1463.884" timestamp="1588994176782" />
-    <state x="187" y="97" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588998212274">
+    <state x="598" y="109" key="#AdminMain/0.0.1463.884@0.0.1463.884" timestamp="1590758400265" />
+    <state x="324" y="134" key="#Project_Structure" timestamp="1590738844015">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="187" y="97" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1463.884@0.0.1463.884" timestamp="1588998212274" />
+    <state x="324" y="134" key="#Project_Structure/0.0.1463.884@0.0.1463.884" timestamp="1590738844015" />
+    <state x="429" y="108" key="#UserMain" timestamp="1590758779516">
+      <screen x="0" y="0" width="1463" height="884" />
+    </state>
+    <state x="429" y="108" key="#UserMain/0.0.1463.884@0.0.1463.884" timestamp="1590758779516" />
+    <state x="187" y="97" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590586840699">
+      <screen x="0" y="0" width="1463" height="884" />
+    </state>
+    <state x="187" y="97" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1463.884@0.0.1463.884" timestamp="1590586840699" />
     <state x="487" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1590479679943">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
     <state x="487" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1463.884@0.0.1463.884" timestamp="1590479679943" />
-    <state x="462" y="225" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588998206533">
+    <state x="462" y="225" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590586829097">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="462" y="225" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1463.884@0.0.1463.884" timestamp="1588998206533" />
+    <state x="462" y="225" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1463.884@0.0.1463.884" timestamp="1590586829097" />
     <state x="531" y="358" width="436" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590466891692">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
@@ -221,26 +313,26 @@
       <screen x="0" y="0" width="1463" height="884" />
     </state>
     <state x="116" y="117" width="1261" height="684" key="DiffContextDialog/0.0.1463.884@0.0.1463.884" timestamp="1590478168359" />
-    <state x="512" y="197" key="FileChooserDialogImpl" timestamp="1590333147808">
+    <state x="512" y="197" key="FileChooserDialogImpl" timestamp="1590739156230">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="512" y="197" key="FileChooserDialogImpl/0.0.1463.884@0.0.1463.884" timestamp="1590333147808" />
-    <state width="1420" height="183" key="GridCell.Tab.0.bottom" timestamp="1590480158157">
+    <state x="512" y="197" key="FileChooserDialogImpl/0.0.1463.884@0.0.1463.884" timestamp="1590739156230" />
+    <state width="1405" height="158" key="GridCell.Tab.0.bottom" timestamp="1590758783086">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state width="1420" height="183" key="GridCell.Tab.0.bottom/0.0.1463.884@0.0.1463.884" timestamp="1590480158157" />
-    <state width="1420" height="183" key="GridCell.Tab.0.center" timestamp="1590480158156">
+    <state width="1405" height="158" key="GridCell.Tab.0.bottom/0.0.1463.884@0.0.1463.884" timestamp="1590758783086" />
+    <state width="1405" height="158" key="GridCell.Tab.0.center" timestamp="1590758783086">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state width="1420" height="183" key="GridCell.Tab.0.center/0.0.1463.884@0.0.1463.884" timestamp="1590480158156" />
-    <state width="1420" height="183" key="GridCell.Tab.0.left" timestamp="1590480158156">
+    <state width="1405" height="158" key="GridCell.Tab.0.center/0.0.1463.884@0.0.1463.884" timestamp="1590758783086" />
+    <state width="1405" height="158" key="GridCell.Tab.0.left" timestamp="1590758783086">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state width="1420" height="183" key="GridCell.Tab.0.left/0.0.1463.884@0.0.1463.884" timestamp="1590480158156" />
-    <state width="1420" height="183" key="GridCell.Tab.0.right" timestamp="1590480158156">
+    <state width="1405" height="158" key="GridCell.Tab.0.left/0.0.1463.884@0.0.1463.884" timestamp="1590758783086" />
+    <state width="1405" height="158" key="GridCell.Tab.0.right" timestamp="1590758783086">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state width="1420" height="183" key="GridCell.Tab.0.right/0.0.1463.884@0.0.1463.884" timestamp="1590480158156" />
+    <state width="1405" height="158" key="GridCell.Tab.0.right/0.0.1463.884@0.0.1463.884" timestamp="1590758783086" />
     <state width="988" height="284" key="GridCell.Tab.1.bottom" timestamp="1590329980917">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
@@ -257,30 +349,30 @@
       <screen x="0" y="0" width="1463" height="884" />
     </state>
     <state width="988" height="284" key="GridCell.Tab.1.right/0.0.1463.884@0.0.1463.884" timestamp="1590329980917" />
-    <state x="235" y="117" key="SettingsEditor" timestamp="1588997224346">
+    <state x="235" y="34" key="SettingsEditor" timestamp="1590739131410">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="235" y="117" key="SettingsEditor/0.0.1463.884@0.0.1463.884" timestamp="1588997224346" />
-    <state x="116" y="117" width="1261" height="684" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590478168359">
+    <state x="235" y="34" key="SettingsEditor/0.0.1463.884@0.0.1463.884" timestamp="1590739131410" />
+    <state x="116" y="117" width="1261" height="684" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590563286801">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="116" y="117" width="1261" height="684" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1463.884@0.0.1463.884" timestamp="1590478168359" />
+    <state x="116" y="117" width="1261" height="684" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1463.884@0.0.1463.884" timestamp="1590563286801" />
     <state x="75" y="101" width="1325" height="684" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590145992640">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
     <state x="75" y="101" width="1325" height="684" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1463.884@0.0.1463.884" timestamp="1590145992640" />
-    <state x="414" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1590463664784">
+    <state x="414" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1590726121719">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="414" y="266" key="com.intellij.ide.util.TipDialog/0.0.1463.884@0.0.1463.884" timestamp="1590463664784" />
+    <state x="414" y="266" key="com.intellij.ide.util.TipDialog/0.0.1463.884@0.0.1463.884" timestamp="1590726121719" />
     <state x="462" y="207" key="extract.method.dialog" timestamp="1590329158598">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
     <state x="462" y="207" key="extract.method.dialog/0.0.1463.884@0.0.1463.884" timestamp="1590329158598" />
-    <state x="0" y="84" key="new project wizard" timestamp="1589772882363">
+    <state x="0" y="84" key="new project wizard" timestamp="1590562954304">
       <screen x="0" y="0" width="1463" height="884" />
     </state>
-    <state x="0" y="84" key="new project wizard/0.0.1463.884@0.0.1463.884" timestamp="1589772882363" />
+    <state x="0" y="84" key="new project wizard/0.0.1463.884@0.0.1463.884" timestamp="1590562954304" />
     <state x="434" y="69" key="refactoring.ChangeSignatureDialog" timestamp="1589784629262">
       <screen x="0" y="0" width="1463" height="884" />
     </state>

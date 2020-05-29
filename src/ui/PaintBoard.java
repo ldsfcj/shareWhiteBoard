@@ -48,7 +48,8 @@ public class PaintBoard extends Canvas implements Serializable {
     public void setColor(Color color){
         this.selectColor = color;
     }
-    //new
+
+    // for function to create a new paint board
     public void clear() {
         shapeList = new ArrayList<Shapes>();
         image = null;
@@ -123,7 +124,6 @@ public class PaintBoard extends Canvas implements Serializable {
     //synchronize the board with other users
     public void synchronize() {
         try {
-//            wb.draw(list);
             BufferedImage image = save();
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             ImageIO.write(image,"png", out);

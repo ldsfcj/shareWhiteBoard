@@ -1,7 +1,5 @@
 package remote;
 
-import remote.IClient;
-
 import java.io.Serializable;
 
 public class user implements Serializable {
@@ -13,7 +11,8 @@ public class user implements Serializable {
         this.name = name;
         this.client = client;
     }
-    //getters and setters
+
+    //getters
     public String getName(){
         return name;
     }

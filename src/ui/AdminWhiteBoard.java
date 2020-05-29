@@ -15,10 +15,9 @@ import java.rmi.RemoteException;
 
 public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
 
-    File file;
-    String dirPath;
+    private File file;
+    private String dirPath = null;
 
-    private String currentFilePath = "";
     public AdminWhiteBoard (String username){
         super(username);
     }
@@ -51,7 +50,6 @@ public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
         menuBar.add(menu);
         this.setJMenuBar(menuBar);
 
-
         JFileChooser jfc = new JFileChooser();
         jfc.setCurrentDirectory(new File("."));
         PicFileFilter jpgFilter = new PicFileFilter("jpg file",".jpg");
@@ -68,7 +66,7 @@ public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
                 int res = JOptionPane.showOptionDialog(null, "Do you want to save the current file?",
                         "Click a button",
                         JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
-                if (res == 0 && currentFilePath.equals("")) {
+                if (res == 0) {
                     int choose = jfc.showSaveDialog(null);
 
                     if (choose == JFileChooser.APPROVE_OPTION) {
@@ -114,7 +112,7 @@ public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
                 int res = JOptionPane.showOptionDialog(null, "Do you want to save the current file?",
                         "Click a button",
                         JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
-                if (res == 0 && currentFilePath.equals("")) {
+                if (res == 0) {
 
                     int choose = jfc.showSaveDialog(null);
 
@@ -168,12 +166,60 @@ public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
         m_Save.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (dirPath == null) {
+                    if (jfc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+                        jfc.setCurrentDirectory(new File("."));
+                        String str;
+                        try {
+                            PicFileFilter filter = (PicFileFilter) jfc.getFileFilter();
+                            str = filter.getExtension();
+                        }
+                        catch(Exception e2) {
+                            str = ".png";
+                        }
+                        file = jfc.getSelectedFile();
+                        File newFile = null;
+                        try {
+                            if (file.getAbsolutePath().toUpperCase().endsWith(str.toUpperCase())) {
+                                newFile = file;
+                                dirPath = file.getAbsolutePath();
+                            } else {
+                                newFile = new File(file.getAbsolutePath() + str);
+                                dirPath = file.getAbsolutePath() + str;
+                            }
+                            str = str.substring(1);//remove the point
+                            ImageIO.write(paintBoard.save(),str, newFile);
+                            JOptionPane.showMessageDialog(null, "save success", "Information", JOptionPane.INFORMATION_MESSAGE);
+                        } catch (IOException e1) {
+                            // TODO Auto-generated catch block
+                            e1.printStackTrace();
+                        }
+                    }
+                    return;
+                }
+                else {
+                    file = new File(dirPath);
+                }
+                try {
+                    String[] format = dirPath.split("\\.");
+                    ImageIO.write(paintBoard.save(), format[format.length - 1],file);
+                    JOptionPane.showMessageDialog(null, "save success", "Information", JOptionPane.INFORMATION_MESSAGE);
+                } catch (IOException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
+            }
+        });
+
+        m_SaveAs.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 String chooseExtension;
                 String[] options = {"Yes","No"};
                 int res = JOptionPane.showOptionDialog(null, "Do you want to save the current file?",
                         "Click a button",
                         JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
-                if (res == 0 && currentFilePath.equals("")) {
+                if (res == 0) {
 
                     int choose = jfc.showSaveDialog(null);
 
@@ -208,24 +254,15 @@ public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
             }
         });
 
-        m_SaveAs.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("另存为  被点击");
-            }
-        });
-
         m_Close.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("关闭  被点击");
                 String chooseExtension;
                 String[] options = {"Yes","No"};
                 int res = JOptionPane.showOptionDialog(null, "Do you want to save this file?",
                         "Click a button",
                         JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
-                if (res == 0 && currentFilePath.equals("")) {
-
+                if (res == 0) {
                     int choose = jfc.showSaveDialog(null);
 
                     if (choose == JFileChooser.APPROVE_OPTION) {
@@ -264,5 +301,4 @@ public class AdminWhiteBoard extends WhitePaintBoard implements Serializable {
             }
         });
     }
-
 }

@@ -57,23 +57,18 @@ public class UserMain extends UnicastRemoteObject implements IClient, Serializab
             Naming.rebind("rmi://" + hostName + "/" + clientServiceName, this);
             System.out.println(this);
 
-            ServerSocket s = new ServerSocket(0);
-            int localPort = s.getLocalPort();
-            s.close();
-
-            IWhiteBoard iwb = new IWhiteBoardImpl();
-            Registry registry = LocateRegistry.createRegistry(localPort);
-            registry.bind("whiteboard",iwb);
-            System.out.println("the port: "+ localPort + " \nserver ready");
+            // for getting the local port which is not used
+//            ServerSocket s = new ServerSocket(0);
+//            int localPort = s.getLocalPort();
+//            s.close();
+//
+//            IWhiteBoard iwb = new IWhiteBoardImpl();
+//            Registry registry = LocateRegistry.createRegistry(localPort);
+//            registry.bind("whiteboard",iwb);
+//            System.out.println("the port: "+ localPort + " \nserver ready");
 
             IWhiteBoard server = (IWhiteBoard) Naming.lookup("rmi://" + hostName + "/" + serviceName);
 
-//            if(!server.check()) {
-//                JOptionPane.showMessageDialog(null, "empty room, connection failed", "error", JOptionPane.ERROR_MESSAGE);
-//                System.exit(0);
-//            }
-
-//            server.isSameName(details);
             if (server.isSameName(details)){
                 JOptionPane.showMessageDialog(null, "This username has been used!", "error", JOptionPane.ERROR_MESSAGE);
                 System.exit(0);
@@ -81,16 +76,11 @@ public class UserMain extends UnicastRemoteObject implements IClient, Serializab
             server.registerListener(details);
 
             UWB.setServer(server);
-
         } catch (RemoteException | NotBoundException e1) {
-            // TODO Auto-generated catch block
             JOptionPane.showMessageDialog(null, "connection failed", "error", JOptionPane.ERROR_MESSAGE);
             e1.printStackTrace();
             System.exit(0);
         } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (AlreadyBoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
@@ -119,7 +109,6 @@ public class UserMain extends UnicastRemoteObject implements IClient, Serializab
             BufferedImage image = ImageIO.read(in);
             UWB.getPaintBoard().load(image);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
